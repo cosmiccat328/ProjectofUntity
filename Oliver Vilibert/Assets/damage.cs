@@ -11,12 +11,6 @@ public class damage : MonoBehaviour
         if(collision.gameObject.tag == "wall")
         {
             collision.gameObject.SendMessage("Takedamage");
-
-            if (collision .gameObject.tag == "npc");
-            {
-                collision.gameObject.SendMessage("Takedamage");
-
-            }
         }
     }
 }

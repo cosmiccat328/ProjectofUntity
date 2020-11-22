@@ -7,6 +7,9 @@ public class traking : MonoBehaviour
     private NavMeshAgent agent;
     public GameObject player;
     public float range;
+    string theCollider;
+    public GameObject receiver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +27,14 @@ public class traking : MonoBehaviour
         }
 
 
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        theCollider = other.tag;
+        if (theCollider == "Player")
+        {
+            receiver.SendMessage("DecreaseHealth");
+        }
     }
 }
