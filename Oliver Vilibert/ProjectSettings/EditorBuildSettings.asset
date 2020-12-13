@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MainMenu.unity
+    guid: a18a7751fa0ec99468eddd838a7066ce
+  - enabled: 1
     path: Assets/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity
     guid: b42ca4c5c936383429d2318c931f7ad2
   - enabled: 1
